@@ -1,0 +1,152 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700);
+
+@-webkit-viewport {
+    width: device-width;
+}
+@-moz-viewport {
+    width: device-width;
+}
+@-ms-viewport {
+    width: device-width;
+}
+
+@-o-viewport {
+    width: device-width;
+}
+
+@viewport {
+    width: device-width;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #d9edf7;
+    color: #f2f2f2;
+    font-family: 'Raleway', 'Segoe UI', sans-serif;
+    /* The html and body elements cannot have any padding or margin. */
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Raleway', 'Segoe UI', sans-serif;
+}
+
+a:link {
+    color: #ffff00;
+}
+
+a:visited {
+    color: #ffaf00;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by its height */
+    margin: 0 auto -60px;
+    /* Pad bottom by footer height */
+    padding: 0 0 60px;
+}
+
+#content {
+    padding-top: 50px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+    height: 60px;
+    background-color: #3276b1;
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+#welcome-screen {
+    background: #ffca08;
+    height: 700px;
+    margin-bottom: 0;
+}
+
+#welcome-screen .container {
+    padding-top: 75px;
+}
+
+#welcome-screen .welcome-logo {
+    width: auto;
+}
+
+#welcome-screen .welcome-desc {
+    padding-top: 150px;
+    margin-right: auto;
+}
+
+/*#wrap > .container {
+    padding: 60px 15px 0;
+}*/
+
+.container .credit {
+    padding: 20px 20px 0;
+}
+
+#footer {
+    border-color: #333;
+    border-top: 1px solid;
+}
+
+#footer > .container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#footer .container .credit #somestuff {
+    vertical-align:middle;
+    float: right
+}
+
+code {
+    font-size: 80%;
+}
+
+/**** Responsive ajdbsha */
+
+@media (max-width: 768px) {
+    #welcome-screen .welcome-desc {
+        font-size: medium;
+    }
+
+    /* Bump up size of carousel content */
+    #footer {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    #footer .container .credit #somestuff {
+        float: none;
+    }
+}
+
+@media (max-width: 480px) {
+    #welcome-screen .welcome-desc {
+        padding-top: 25px;
+        font-size: medium;
+    }
+
+    #welcome-screen .welcome-logo {
+        float: none;
+    }
+
+    #welcome-screen .container {
+        padding-top: 0;
+    }
+}
+
+@media (max-height: 480px) {
+    #footer {
+        visibility: hidden;
+    }
+}
